@@ -32,7 +32,7 @@ const Hero = () => {
             <div className="w-40 h-40 md:w-72 md:h-72 mx-auto relative group flex items-center justify-center h-full">
               <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 via-pink-400 to-purple-400 rounded-full blur-lg opacity-75 group-hover:opacity-100 transition-opacity duration-300"></div>
               <img 
-                src="images/My profile.jpg" 
+                src="/images/My profile.jpg" 
                 alt="S.V.Bindu Sathwika"
                 className="relative w-full h-full object-cover rounded-full border-4 border-gradient-to-r from-cyan-400 to-pink-400 group-hover:scale-105 transition-transform duration-300"
               />

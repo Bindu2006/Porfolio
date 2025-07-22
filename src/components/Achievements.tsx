@@ -45,20 +45,20 @@ const hackathonItems = [
 ];
 
 const imageItems = [
-  'Anurag -1.jpeg',
-  'Anurag-2.jpeg',
-  'Anurag-3.jpeg',
-  'Health assiatnt AI-1.jpeg',
-  'Health Assistant AI -2.jpeg',
-  'Rgukt-2.jpeg',
-  'Rgujt-1.jpeg',
-  'Teckzite.jpeg',
-  'tec.jpeg',
-  'te.jpeg',
-  'Teck.jpeg',
-].map((filename, idx) => ({
+  '/images/Anurag -1.jpeg',
+  '/images/Anurag-2.jpeg',
+  '/images/Anurag-3.jpeg',
+  '/images/Health assiatnt AI-1.jpeg',
+  '/images/Health Assistant AI -2.jpeg',
+  '/images/Rgukt-2.jpeg',
+  '/images/Rgujt-1.jpeg',
+  '/images/Teckzite.jpeg',
+  '/images/tec.jpeg',
+  '/images/te.jpeg',
+  '/images/Teck.jpeg',
+].map((src, idx) => ({
   id: idx,
-  src: `images/${filename}`,
+  src,
 }));
 
 function useResponsiveSlides(itemsLength: number) {
