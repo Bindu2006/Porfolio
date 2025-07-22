@@ -1,0 +1,108 @@
+.carousel-container {
+  position: relative;
+  background: transparent;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px;
+}
+
+.carousel-track {
+  display: flex;
+  align-items: stretch;
+  will-change: transform;
+  min-height: 220px;
+  overflow: visible;
+}
+
+.carousel-item {
+  background: linear-gradient(135deg, #18181b 80%, #23272f 100%);
+  border-radius: 1rem;
+  box-shadow: 0 4px 32px 0 rgba(0,255,255,0.06), 0 1.5px 8px 0 rgba(255,20,147,0.06);
+  border: 2px solid #23272f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 1rem;
+  min-height: 200px;
+  min-width: 220px;
+  max-width: 320px;
+  margin: 0 auto;
+  transition: box-shadow 0.3s, border 0.3s, background 0.3s;
+}
+
+.carousel-item-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.carousel-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  color: #00fff7;
+}
+
+.carousel-item-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #00fff7;
+  margin-bottom: 0.25rem;
+  text-align: center;
+}
+
+.carousel-item-description {
+  font-size: 0.95rem;
+  color: #b3b3b3;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.carousel-indicators-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.carousel-indicators {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.carousel-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #23272f;
+  border: 2px solid #00fff7;
+  transition: background 0.2s, border 0.2s, transform 0.2s;
+  cursor: pointer;
+}
+
+.carousel-indicator.active {
+  background: linear-gradient(90deg, #00fff7 60%, #FF1493 100%);
+  border: 2px solid #FF1493;
+  transform: scale(1.2);
+}
+
+.carousel-indicator.inactive {
+  opacity: 0.5;
+}
+
+@media (max-width: 900px) {
+  .carousel-container {
+    min-width: 220px;
+    max-width: 95vw;
+  }
+  .carousel-item {
+    min-width: 180px;
+    max-width: 95vw;
+  }
+} 
